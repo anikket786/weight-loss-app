@@ -8,5 +8,18 @@
         android:id="@+id/initialIntroFragment"
         android:name="com.app.general.weightlossapp.ui.onBoarding.InitialIntroFragment"
         android:label="fragment_initial_intro"
-        tools:layout="@layout/fragment_initial_intro" />
+        tools:layout="@layout/fragment_initial_intro" >
+        <action
+            android:id="@+id/action_initialIntroFragment_to_exerciseLevelFragment"
+            app:destination="@id/exerciseLevelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseLevelFragment"
+        android:name="com.app.general.weightlossapp.ui.onBoarding.ExerciseLevelFragment"
+        android:label="fragment_exercise_level"
+        tools:layout="@layout/fragment_exercise_level" />
 </navigation>

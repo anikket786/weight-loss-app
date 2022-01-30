@@ -14,7 +14,6 @@
         android:text="@string/loose_weight_in_30_days"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:maxLines="2"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/animationView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,10 +24,10 @@
         android:id="@+id/animationView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/lottie_runner" />
@@ -37,14 +36,14 @@
         android:id="@+id/btnNext"
         android:layout_width="300dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
+        android:drawableEnd="@drawable/ic_arrow_forward_24"
+        android:drawableTint="@color/reply_blue_800"
         android:text="@string/get_set_go"
         android:textColor="@color/reply_blue_800"
         android:textStyle="bold"
-        android:drawableTint="@color/reply_blue_800"
-        android:drawableEnd="@drawable/ic_arrow_forward_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/animationView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

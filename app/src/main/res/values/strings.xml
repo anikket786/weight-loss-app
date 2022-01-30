@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Weight Loss App</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="get_set_go">Get Set Go</string>
     <string name="loose_weight_in_30_days">Loose weight in 30 days.</string>
 </resources>
