@@ -1,18 +1,11 @@
 package com.app.general.weightlossapp.ui.onBoarding
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.app.general.weightlossapp.R
+import android.view.LayoutInflater
+import com.app.general.weightlossapp.databinding.ActivityOnBoardingBinding
+import com.app.general.weightlossapp.ui.base.BaseActivity
 
-class OnBoardingActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-        window.navigationBarColor = ContextCompat.getColor(this, R.color.reply_blue_800)
-        installSplashScreen()
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_on_boarding)
-    }
+class OnBoardingActivity : BaseActivity<ActivityOnBoardingBinding>() {
+
+    override val bindingInflater: (LayoutInflater) -> ActivityOnBoardingBinding
+        get() = ActivityOnBoardingBinding::inflate
 }

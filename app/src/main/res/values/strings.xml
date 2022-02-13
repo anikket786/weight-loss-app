@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Weight Loss App</string>
     <string name="get_set_go">Get Set Go</string>
-    <string name="loose_weight_in_30_days">Loose weight in 30 days.</string>
+    <string name="loose_weight_in_30_days">Loose weight in 30 days!</string>
+    <string name="choose_a_workout_plan">Choose a workout plan which suits you best.</string>
+    <string name="next_btn_title">Next</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="min_a_day_subtitle">%1$d-%2$d min a day</string>
 </resources>
